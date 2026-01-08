@@ -1,0 +1,40 @@
+package com.aluracursos.spotidante.modelos;
+
+public class Canciones extends  Audio{
+    private String album;
+    private String cantante;
+    private String genero;
+
+    @Override
+    public int getClasificacion() {
+        if (getTotalDemeGusta() > 500){
+            return 8;
+        }else {
+            return 4;
+        }
+    }
+
+    public String getAlbum() {
+        return album;
+    }
+
+    public void setAlbum(String album) {
+        this.album = album;
+    }
+
+    public String getGenero() {
+        return genero;
+    }
+
+    public void setGenero(String genero) {
+        this.genero = genero;
+    }
+
+    public String getCantante() {
+        return cantante;
+    }
+
+    public void setCantante(String cantante) {
+        this.cantante = cantante;
+    }
+}
